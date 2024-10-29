@@ -28,8 +28,12 @@ font-family: "Gruppo", serif;
 }
 
 .logo{
-  border-radius: 7px;
   transition: .2s linear;
+}
+
+.logo img{
+  border-radius: 7px;
+  vertical-align: middle;
 }
 
 .logo:hover{
@@ -46,35 +50,90 @@ font-family: "Gruppo", serif;
   color: #888;
 }
 
-.index-container{
-  display: grid;
-  grid-template-rows: auto 1fr auto;
-
-}
+/* home page */
 
 .index-main{
-  background-color: rgba(0, 0, 0, .7);
+  position: relative;
 }
 
-.index-main-section{
+.index-overlay{
+  background-color: rgba(0, 0, 0, .3);
+  position: absolute;
+  width: 100%;
+  height: 100vh;
+}
+
+.index-text{
   text-align: center;
+  position: absolute;
+  top: 57%;
+  left: 50%;
+  transform: translate(-50%, -50%);
 }
 
 .index-title{
-  font-size: 3rem;
-  font-family: "Indie Flower", serif;
+  font-size: 3.5rem;
+  color: red;
+}
+
+.index-leyend{
   color: #fff;
 }
 
-.index-subtitle{
-  color: #fff;
+.index-user{
+  position: absolute;
+  display: flex;
+  align-items: center;
+  top: 5%;
+  right: 5%;
 }
 
-/* cards */
+.index-user-p{
+  color: #fff;
+  font-size: 20px;
+  padding-right: 30px;
+}
+
+.index-user-img{
+  width: 100px;
+  border-radius: 50%;
+}
+
+.index-btn{
+  position: absolute;
+  color: #fff;
+  font-size: 20px;
+  padding: 15px 40px;
+  background-color: rgba(137, 43, 226, 0.801);
+  border-radius: 10px;
+  top: 70%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  transition: .2s linear;
+  z-index: 1;
+}
+
+.index-btn:hover{
+  background-color: blueviolet;
+  box-shadow: 0px 0px 50px #ffffffa2;
+}
+
+.index-video{
+  width: 100%;
+  height: 100vh;
+  object-fit: cover;
+}
+
+/* products page - cards */
+
+.products-main{
+  background-color: rgba(0, 0, 0, .7);
+}
 
 .cards{
   max-width: 1400px;
-  margin: 50px auto;
+  margin: 0px auto;
+  padding: 50px 0px;
   display: flex;
   justify-content: center;
   flex-wrap: wrap;
@@ -125,50 +184,68 @@ font-family: "Gruppo", serif;
   background-color: rgb(13, 90, 253);
 }
 
-/* about page */
+/* contact page */
 
-.about-main{
+.contact-container{
+  display: grid;
+  grid-template-rows: auto 1fr auto;
+  height: 100vh;
+}
+
+.contact-main{
   background-color: rgba(0, 0, 0, .7);
-  position: relative;
 }
 
-.about-video{
-  width: 100%;
-  height: 100vh;
-  object-fit: cover;
+.contact-form-div{
+  display: flex;
+  justify-content: center;
+  padding: 20px;
 }
 
-.about-overlay{
-  background-color: rgba(0, 0, 0, .3);
-  position: absolute;
-  width: 100%;
-  height: 100vh;
-}
-
-.about-text{
-  position: absolute;
-  top: 70%;
-  left: 35%;
-  transform: translate(-50%, -50%);
+.contact-form{
+  display: flex;
+  flex-direction: column;
+  width: 500px;
+  gap: 10px;
   color: #fff;
+  border: 1px solid #fff;
+  background-color: rgba(251, 250, 252, 0.103);
+  border-radius: 7px;
+  padding: 10px;
 }
 
-.about-title{
-  font-size: 3rem;
-  color: red;
-  padding: 20px 0px;
+.fname, .email{
+  height: 25px;
+  border-radius: 2px;
+  padding: 5px;
 }
 
-.about-leyend{
-  max-width: 600px;
-  color: #fbf8cc;
+.submit{
+  font-size: 15px;
+  height: 30px;
+  border-radius: 3px;
+  transition: .2s linear;
+  cursor: pointer;
+  background-color: #ccc;
+}
+
+.submit:hover{
+  background-color: #aaa;
+}
+
+.message{
+  padding: 5px;
+}
+
+input{
+  border: none;
 }
 
 /* footer */
 
 .footer{
   width: 100%;
-  padding: 10px;
+  padding: 7px;
   display: flex;
   justify-content: space-around;
   align-items: center;
@@ -185,6 +262,7 @@ font-family: "Gruppo", serif;
 
 .rrss img{
   transition: .2s linear;
+  width: 36px;
 }
 
 .rrss img:hover{
@@ -200,6 +278,6 @@ font-family: "Gruppo", serif;
   color: #fff;
 }
 
-.copy-anio{
-  color: #ccc;
+.footer-span{
+  color: red;
 }
