@@ -44,6 +44,7 @@ font-family: "Gruppo", serif;
   padding: 10px;
   transition: .2s linear;
   color: #fff;
+  text-decoration: none;
 }
 
 .links a:hover{
@@ -96,7 +97,7 @@ font-family: "Gruppo", serif;
 
 .index-user-img{
   width: 100px;
-  border-radius: 50%;
+  border-radius: 40%;
 }
 
 .index-btn{
@@ -111,6 +112,7 @@ font-family: "Gruppo", serif;
   transform: translate(-50%, -50%);
   transition: .2s linear;
   z-index: 1;
+  text-decoration: none;
 }
 
 .index-btn:hover{
@@ -128,6 +130,16 @@ font-family: "Gruppo", serif;
 
 .products-main{
   background-color: rgba(0, 0, 0, .7);
+}
+
+.products-main-logo{
+  display: flex;
+  justify-content: center;
+}
+
+.products-main-logo-img{
+  width: 350px;
+  padding: 50px;
 }
 
 .cards{
@@ -156,7 +168,7 @@ font-family: "Gruppo", serif;
 
 .card-img{
   width: 100%;
-  height: 16rem;
+  height: 15rem;
   object-fit: cover;
   border-radius: 7px;
 }
@@ -198,7 +210,16 @@ font-family: "Gruppo", serif;
 
 .contact-form-div{
   display: flex;
+  flex-direction: column;
   justify-content: center;
+  align-items: center;
+  padding: 20px;
+}
+
+.contact-title{
+  color: #fff;
+  font-family: "Indie Flower", serif;
+  font-size: 2rem;
   padding: 20px;
 }
 
@@ -239,6 +260,22 @@ font-family: "Gruppo", serif;
 
 input{
   border: none;
+}
+
+.contact-iframe{
+  text-align: center;
+  padding: 50px;
+}
+
+.contact-iframe-title{
+  color: #fff;
+  font-family: "Indie Flower", serif;
+  font-size: 1.6rem;
+  padding: 20px;
+}
+
+iframe{
+  border-radius: 7px;
 }
 
 /* footer */
