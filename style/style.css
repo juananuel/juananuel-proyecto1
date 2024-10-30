@@ -34,6 +34,7 @@ font-family: "Gruppo", serif;
 .logo img{
   border-radius: 7px;
   vertical-align: middle;
+  width: 48px;
 }
 
 .logo:hover{
@@ -164,6 +165,11 @@ font-family: "Gruppo", serif;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
+  transition: .2s linear;
+}
+
+.card:hover{
+  transform: scale(1.02);
 }
 
 .card-img{
