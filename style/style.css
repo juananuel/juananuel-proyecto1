@@ -105,9 +105,9 @@ font-family: "Gruppo", serif;
   position: absolute;
   color: #fff;
   font-size: 20px;
-  padding: 15px 40px;
-  background-color: rgba(137, 43, 226, 0.801);
-  border-radius: 10px;
+  padding: 10px 40px;
+  background-color: rgba(137, 43, 226, 0.5);
+  border-radius: 50px;
   top: 70%;
   left: 50%;
   transform: translate(-50%, -50%);
@@ -288,7 +288,7 @@ iframe{
 
 .footer{
   width: 100%;
-  padding: 7px;
+  padding: 10px;
   display: flex;
   justify-content: space-around;
   align-items: center;
@@ -297,10 +297,19 @@ iframe{
 
 .rrss{
   text-align: center;
+  width: 100%;
+}
+
+.rrss-a{
+  display: flex;
+  justify-content: space-around;
+  max-width: 400px;
+  align-items: center;
+  margin: 0 auto;
 }
 
 .rrss a{
-  padding: 40px;
+  align-items: center;
 }
 
 .rrss img{
@@ -314,11 +323,18 @@ iframe{
 
 .rrss p{
   color: #fff;
-  padding: 10px;
+}
+
+.copyright{
+  width: 100%;
 }
 
 .copyright p{
   color: #fff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0 auto;
 }
 
 .footer-span{
