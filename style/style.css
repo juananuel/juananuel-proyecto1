@@ -265,7 +265,7 @@ font-family: "Gruppo", serif;
 .contact-form{
   display: flex;
   flex-direction: column;
-  width: 500px;
+  min-width: 500px;
   gap: 10px;
   color: #fff;
   border: 1px solid #fff;
@@ -315,6 +315,8 @@ input{
 
 iframe{
   border-radius: 7px;
+  min-width: 500px;
+  height: 400px;
 }
 
 /* footer */
@@ -372,4 +374,10 @@ iframe{
 
 .footer-span{
   color: red;
+}
+
+@media only screen and (max-width: 600px) {
+  .contact-form, iframe{
+    min-width: 300px;
+  }
 }
