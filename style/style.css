@@ -134,24 +134,27 @@ font-family: "Gruppo", serif;
 }
 
 .products-main-logo{
-  background-image: url("../assets/netflix-center-2.jpg");
   object-fit: cover;
   height: 40vh;
   display: flex;
   justify-content: center;
   position: relative;
 }
-
-.products-main-logo-img{
-  max-width: 350px;
-  max-height: 60px;
-  position: absolute;
-  top: 10%;
-  right: 10%;
-  transition: .2s linear;
+  
+  .carousel-overlay-h3{
+    color: rgb(255, 0, 0);
+    position: absolute;
+    font-size: 3.5rem;
+    font-weight: bold;
+    top: 10%;
+    right: 16%;
+    max-width: 350px;
+    max-height: 60px;
+    transition: .2s linear;
+    z-index: 1;
 }
 
-.products-main-logo-img:hover{
+.carousel-overlay-h3:hover{
   filter: blur(5px);
 }
 
