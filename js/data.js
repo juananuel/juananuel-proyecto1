@@ -67,4 +67,42 @@ const moviesThree = [
   }
 ]
 
-export { moviesOne, moviesTwo, moviesThree }
+const merchandise = [
+  {
+    id: 1,
+    type: "remera",
+    price: 10,
+    title: "back to the future",
+    url: "https://i.postimg.cc/3RFSTwC1/backtothefuture.png"    
+  },
+  {
+    id: 2,
+    type: "remera",
+    price: 11,
+    title: "chucky",
+    url: "https://i.postimg.cc/qMSGWnH0/chucky.jpg"
+  },
+  {
+    id: 3,
+    type: "remera",
+    price: 12,
+    title: "halloween",
+    url: "https://i.postimg.cc/WpfmJr3r/halloween.jpg"
+  },
+  {
+    id: 4,
+    type: "remera",
+    price: 13,
+    title: "harry potter",
+    url: "https://i.postimg.cc/bwPRzPrF/harrypotter-one.jpg"
+  },
+  {
+    id: 5,
+    type: "remera",
+    price: 14,
+    title: "joker",
+    url: "https://i.postimg.cc/7Y3gtR91/joker.png"
+  }
+]
+
+export { moviesOne, moviesTwo, moviesThree, merchandise }
