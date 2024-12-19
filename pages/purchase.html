@@ -6,36 +6,45 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Purchase</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+  <link rel="stylesheet" href="../style/style.css">
 </head>
 
 <body>
 
-  <h1>Gracias por confiar en nosotros.</h1>
-  <hr>
+  <div class="purchase-container bg-secondary">
 
-  <main>
-    <section>
-      <div id="detalle"></div>
-    </section>
+    <h2 class="purchase-h2">Gracias por confiar en nosotros.</h2>
+    <hr>
+  
+    <main>
+      <section>
+        <div id="detalle" class="text-light"></div>
+      </section>
+    </main>
+  
+    <form id="formulario" class="formulario" action="https://formspree.io/f/xzzplwkj" method="POST">
+      <textarea id="carritoData" name="carrito" style="display:none;"></textarea>
+      <textarea id="totalCarrito" name="total" style="display:none;"></textarea>
+      <br>
+      <input type="text" class="purchase-input" id="nombre" name="nombre" placeholder="Ingresa tu nombre" required>
+      <input type="text" class="purchase-input" id="apellido" name="apellido" placeholder="Ingresa tu apellido" required>
+      <input type="email" class="purchase-input" id="contactoEmail" name="email" placeholder="Ingresa tu correo" required>
+      <input type="tel" class="purchase-input" id="telefono" name="telefono" placeholder="Ingresa tu teléfono" required>
+      <br><br>
+      <button type="submit" id="botonEnviar" class="btn btn-success">Confirmar Compra</button>
+    </form>
+  
+    <div id="detalle" class=""></div>
+    <hr>
+    <a href="../pages/merchandise.html"><button class="btn btn-light">Volver</button></a>
 
-  </main>
+  </div>
 
-  <form id="formulario" action="https://formspree.io/f/xzzbondw" method="POST">
-    <textarea id="carritoData" name="carrito" style="display:none;"></textarea>
-    <textarea id="totalCarrito" name="total" style="display:none;"></textarea>
-    <br>
-    <input type="text" id="nombre" name="nombre" placeholder="Ingresa tu nombre" required>
-    <input type="text" id="apellido" name="apellido" placeholder="Ingresa tu apellido" required>
-    <input type="email" id="contactoEmail" name="email" placeholder="Ingresa tu correo" required>
-    <input type="tel" id="telefono" name="telefono" placeholder="Ingresa tu teléfono" required>
-    <br><br>
-    <button type="submit" id="botonEnviar">Confirmar Compra</button>
-  </form>
-
-
-  <div id="detalle"></div>
-  <hr>
-  <a href="../pages/merchandise.html"><button>Volver</button></a>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+    crossorigin="anonymous"></script>
   <script src="../js/purchase.js"> </script>
 </body>
 
